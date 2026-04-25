@@ -1,32 +1,27 @@
 # Recipe Web App
 
-A simple recipe blog with cookie-based password authentication.
+A Svelte recipe blog with client-side authentication.
 
 ## Setup
 
 1. Install Node.js (if not already installed).
 2. Run `npm install` to install dependencies.
-3. Create a `.env` file in the root directory with `PASSWORD=your_secure_password`.
-4. Run `npm start` to start the server.
+3. Run `npm run dev` to start the development server.
 
-The server will run on http://localhost:3000.
+The site will run on `http://localhost:5173` by default.
 
 ## Authentication
 
-- Visit the site, you'll be redirected to /login.
-- Enter the password from the `.env` file.
-- After login, you can access all pages.
+- The app shows a login screen on load.
+- Enter the password `securepassword123`.
+- After login, you can view the recipes and recipe detail.
 - Click "Logga ut" to logout.
+
+## Deployment
+
+This is a static Svelte app and can be deployed to Vercel as a static site.
 
 ## Notes
 
-- The password is stored in an environment variable for security.
-- Do not commit the `.env` file to version control.
-
-## Vercel Deployment
-
-1. Add the `PASSWORD` secret in Vercel Dashboard for your project.
-2. Deploy the repo normally.
-3. Vercel will route all requests through `api/index.js` using `vercel.json`.
-
-If the app still loads without login, the issue is usually that the deployment is currently serving the static `public/` site instead of the serverless function. Make sure the project is imported with the new `vercel.json` and that the environment variable is configured in Vercel.
+- Client-side password protection is not secure for sensitive data.
+- For a production app, add a proper server-side authentication backend.

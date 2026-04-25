@@ -1,0 +1,66 @@
+export const recipes = [
+  {
+    id: 1,
+    category: 'Varmrätt',
+    emoji: '🐖',
+    title: 'Carnitas',
+    desc: 'Långkokta, citrusdoftande carnitas med kryddor och krispiga kanter. Servera i majstortilla med salsa verde, silverlök och koriander.',
+    time: '4–5 h',
+    servings: '6-8',
+    difficulty: 'Medel',
+    heroImage: '/assets/img/finished_carnitas.JPG',
+    heroPrompt: 'slow cooked carnitas with crispy edges in tortillas, fresh cilantro, lime, Mexican street food, vibrant food photography',
+    ingredients: [
+      { name: 'Fläskbog eller fläskkarre', amount: '1 - 1.5 kg' },
+      { name: 'Spiskummin', amount: '1 msk' },
+      { name: 'Rökt paprika', amount: '1 msk' },
+      { name: 'Oregano', amount: '1 msk' },
+      { name: 'Chilipulver', amount: '1 msk' },
+      { name: 'Brunt socker', amount: '1 msk' },
+      { name: 'Vitlökspulver', amount: '1 msk' },
+      { name: 'Salt', amount: 'efter smak' },
+      { name: 'Svartpeppar', amount: 'efter smak' },
+      { name: 'Stekfett från bacon', amount: 'till stekning' },
+      { name: 'Margarin', amount: '100 g' },
+      { name: 'Kanelstång', amount: '1 st' },
+      { name: 'Lagerblad', amount: '3 st' },
+      { name: 'Hela chilifrukter', amount: '1-2 st (starka)' },
+      { name: 'Vitlöksklyftor', amount: '3 st' },
+      { name: 'Apelsiner', amount: '2 st' },
+      { name: 'Gullökar', amount: '2 st' },
+      { name: 'Lime', amount: '1 st' },
+      { name: 'Coca-Cola (vanlig)', amount: '1 liter' },
+      { name: 'Stir in Spice paste - Smoky Chipotle', amount: '1 paket' },
+      { name: 'Chipotle paste', amount: '1 burk' },
+      { name: 'Liquid smoke', amount: 'valfritt, några skvättar' },
+    ],
+    steps: [
+      {
+        text: 'Skär upp köttet i stora bitar och krydda det med spiskummin, rökt paprika, oregano, brunt socker, chilipulver, vitlökspulver, salt och peppar. Massera in kryddorna ordentligt.',
+        image: '/assets/img/ingredients.jpg',
+      },
+      {
+        text: 'Dela gullökarna i fyra delar och skär apelsinerna och limen på mitten. Hacka vitlöken grovt.',
+      },
+      {
+        text: 'Lägg bacon i en kall kastrull och värm långsamt på låg värme tills fettet renderats ut. Ta upp baconet när det är krispigt och lämna fettet i kastrullen.',
+        image: '/assets/img/fried_bacon.jpg',
+      },
+      {
+        text: 'Höj till medel-hög värme och smält margarinet i det värmande baconfettet. Bryn köttbitarna på alla sidor i omgångar så att de får fin färg utan att bli genomstekta.',
+      },
+      {
+        text: 'Lägg tillbaka allt kött i kastrullen tillsammans med lök, vitlök, chilifrukter, lagerblad och kanelstång. Häll i Coca-Cola och pressa ut saften ur apelsinerna och limen. Tillsätt även skal, spice paste, chipotle paste och eventuellt liquid smoke.',
+        image: '/assets/img/liquid_smoke_bottle.jpg',
+      },
+      {
+        text: 'Koka på medel-låg värme i minst 4 timmar. Rör om var 45:e minut och tillsätt vatten efter hand så att vätskenivån håller sig jämn under hela koktiden.',
+        image: '/assets/img/carnitas_cooking_on_stove.jpg',
+      },
+      {
+        text: 'Köttet är klart när det enkelt går att dra isär med en gaffel. Ta bort kanelstång, apelsin- och limeskal. Dra sedan isär köttet och stek det lätt i lite av såsen så det får krispiga kanter.',
+        image: '/assets/img/finished_carnitas.JPG',
+      },
+    ],
+  },
+];
